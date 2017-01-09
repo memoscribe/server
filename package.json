@@ -1,0 +1,30 @@
+{
+  "name": "memoscribe-server",
+  "version": "0.0.1",
+  "description": "A server for the memoscribe platform",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/memoscribe/server.git"
+  },
+  "keywords": [
+    "note",
+    "memoscribe",
+    "notebook",
+    "cross",
+    "platform",
+    "note",
+    "app"
+  ],
+  "author": "Mike Dettmer",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/memoscribe/server/issues"
+  },
+  "homepage": "https://github.com/memoscribe/server#readme"
+}
