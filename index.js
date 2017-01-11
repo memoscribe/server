@@ -26,12 +26,12 @@ passport.use(new LocalStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
+const auth = require('./routes/auth');
+
+app.use('/auth', auth);
+
 const pkg = require('./package.json');
-
 app.set('port', process.env.PORT || 3000);
-
-var server = app.listen(app.get('port'), function() {
-  console.log(pkg.name, 'listening on port ', server.address().port);
+const server = app.listen(app.get('port'), function() {
+  console.log(pkg.name, 'listening on port', server.address().port);
 });
-
-module.exports = app;
